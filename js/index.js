@@ -50,6 +50,11 @@ navLinks[3].textContent = "Features";
 navLinks[4].textContent = "About";
 navLinks[5].textContent = "Contact";
 
+//Change Navigation color to green
+let links = document.querySelectorAll('a');
+links.forEach(link => {
+  link.style.color = 'green'})
+
 //CTA Section
 
 let heading = document.querySelector('h1');
