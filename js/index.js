@@ -53,7 +53,19 @@ navLinks[5].textContent = "Contact";
 //Change Navigation color to green
 let links = document.querySelectorAll('a');
 links.forEach(link => {
-  link.style.color = 'green'})
+  link.style.color = 'green'});
+
+//Adding new items to the nav
+let navLink0 = document.createElement('a');
+let navLink7 = document.createElement('a');
+
+let menu = document.getElementsByTagName('nav')[0];
+menu.prepend(navLink0); 
+menu.appendChild(navLink7);
+navLink0.innerText = 'Blog';
+navLink7.innerText = 'Follow Us';
+navLink0.style.color = 'green';
+navLink7.style.color = 'green';
 
 //CTA Section
 
